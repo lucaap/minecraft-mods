@@ -1,0 +1,22 @@
+--- net/minecraft/network/MemoryConnection.java	Tue Sep 17 14:00:15 2013
++++ net/minecraft/network/MemoryConnection.java	Tue Sep 17 14:01:07 2013
+@@ -11,13 +11,18 @@
+ public class MemoryConnection implements INetworkManager {
+ 
+    private static final SocketAddress field_74444_a = new InetSocketAddress("127.0.0.1", 0);
+-   private final List field_74442_b;
++   private final List field_74442_b  = java.util.Collections.synchronizedList(new java.util.ArrayList());
+    private final ILogAgent field_98214_c;
+    private MemoryConnection field_74443_c;
+    private NetHandler field_74440_d;
+    private boolean field_74441_e;
+    private String field_74438_f;
+    private Object[] field_74439_g;
++
++   public MemoryConnection(ILogAgent p_i1392_1_, NetHandler p_i1392_2_) {
++      this.field_74440_d = p_i1392_2_;
++      this.field_98214_c = p_i1392_1_;
++   }
+ 
+    public void func_74425_a(NetHandler p_74425_1_) {
+       this.field_74440_d = p_74425_1_;
