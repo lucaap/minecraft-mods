@@ -148,20 +148,21 @@ public class Item
     public static Item redstoneRepeater = (new ItemReed(100, Block.redstoneRepeaterIdle)).setUnlocalizedName("diode").setCreativeTab(CreativeTabs.tabRedstone).setTextureName("repeater");
     public static Item cookie = ((ItemFood)(new ItemFood(101, 2, 0.1F, false)).setUnlocalizedName("cookie")).setTextureName("cookie");
     public static ItemMap map = (ItemMap)(new ItemMap(102)).setUnlocalizedName("map").setTextureName("map_filled");
-    public static Item energyBar = ((ItemFood)(new ItemFood(5000, 2, 0.1F, false)).setUnlocalizedName("Energy_Bar")).setPotionEffect(Potion.moveSpeed.id, 20, 20, 1.0F).setTextureName("energy_bar");
-    public static Item orangeFanta = ((ItemFood)(new ItemFood(5001, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("orange_fanta")).setPotionEffect(Potion.digSpeed.id, 20, 20, 1.0F).setTextureName("orange_fanta");
-    public static Item strawberryFanta = ((ItemFood)(new ItemFood(5002, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("strawberry_fanta")).setPotionEffect(Potion.regeneration.id, 20, 20, 1.0F).setTextureName("strawberry_fanta");
-    public static Item blueberryFanta = ((ItemFood)(new ItemFood(5003, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("blueberry_fanta")).setPotionEffect(Potion.waterBreathing.id, 20, 20, 1.0F).setTextureName("blueberry_fanta");
-    public static Item lemonFanta = ((ItemFood)(new ItemFood(5004, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("lemon_fanta")).setPotionEffect(Potion.invisibility.id, 20, 20, 1.0F).setTextureName("lemon_fanta");
-    public static Item mixFanta = ((ItemFood)(new ItemFood(5005, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("mix_fanta")).setPotionEffect(Potion.jump.id, 20, 20, 1.0F).setTextureName("mix_fanta");
-    public static Item cocoCola = ((ItemFood)(new ItemFood(5006, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("coco_cola")).setPotionEffect(Potion.heal.id, 20, 20, 1.0F).setTextureName("coca_cola");
-    public static Item sprite = ((ItemFood)(new ItemFood(5007, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("sprite")).setPotionEffect(Potion.nightVision.id, 20, 20, 1.0F).setTextureName("sprite");
-    public static Item Burger = ((ItemFood)(new ItemFood(5008, 2, 0.1F, false)).setUnlocalizedName("burger")).setPotionEffect(Potion.damageBoost.id, 20, 20, 1.0F).setTextureName("burger");
-    public static Item Chips = ((ItemFood)(new ItemFood(5009, 2, 0.1F, false)).setUnlocalizedName("chips")).setPotionEffect(Potion.hunger.id, 20, 20, 1.0F).setTextureName("chips");
-    public static Item pizzaSlice = ((ItemFood)(new ItemFood(5010, 2, 0.1F, false)).setUnlocalizedName("pizza_slice")).setPotionEffect(Potion.resistance.id, 20, 20, 1.0F).setTextureName("pizza_slice");
-    public static Item rawChocolate = ((ItemFood)(new ItemFood(5011, 2, 0.1F, false)).setUnlocalizedName("raw_chocolate")).setTextureName("raw_chocolate");
-    public static Item Chocolate = ((ItemFood)(new ItemFood(5012, 2, 0.1F, false)).setUnlocalizedName("chocolate")).setTextureName("chocolate");
-    public static Item tomato = (new ItemSeedFood(5013, 1, 0.3F, Block.tomato.blockID, Block.tilledField.blockID)).setUnlocalizedName("tomato").setTextureName("tomato");
+
+    public static Item energyBar = ((ItemFood)(new ItemFood(5000, 2, 0.1F, false)).setUnlocalizedName("Energy_Bar")).setPotionEffect(Potion.moveSpeed.id, 20, 20, 1.0F).setTextureName("firstmod:energy_bar");
+    public static Item orangeFanta = ((ItemFood)(new ItemFood(5001, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("orange_fanta")).setPotionEffect(Potion.digSpeed.id, 20, 20, 1.0F).setTextureName("firstmod:orange_fanta");
+    public static Item strawberryFanta = ((ItemFood)(new ItemFood(5002, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("strawberry_fanta")).setPotionEffect(Potion.regeneration.id, 20, 20, 1.0F).setTextureName("firstmod:strawberry_fanta");
+    public static Item blueberryFanta = ((ItemFood)(new ItemFood(5003, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("blueberry_fanta")).setPotionEffect(Potion.waterBreathing.id, 20, 20, 1.0F).setTextureName("firstmod:blueberry_fanta");
+    public static Item lemonFanta = ((ItemFood)(new ItemFood(5004, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("lemon_fanta")).setPotionEffect(Potion.invisibility.id, 20, 20, 1.0F).setTextureName("firstmod:lemon_fanta");
+    public static Item mixFanta = ((ItemFood)(new ItemFood(5005, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("mix_fanta")).setPotionEffect(Potion.jump.id, 20, 20, 1.0F).setTextureName("firstmod:mix_fanta");
+    public static Item cocoCola = ((ItemFood)(new ItemFood(5006, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("coco_cola")).setPotionEffect(Potion.heal.id, 20, 20, 1.0F).setTextureName("firstmod:coca_cola");
+    public static Item sprite = ((ItemFood)(new ItemFood(5007, 2, 0.1F, false)).setAlwaysEdible().setUnlocalizedName("sprite")).setPotionEffect(Potion.nightVision.id, 20, 20, 1.0F).setTextureName("firstmod:sprite");
+    public static Item Burger = ((ItemFood)(new ItemFood(5008, 2, 0.1F, false)).setUnlocalizedName("burger")).setPotionEffect(Potion.damageBoost.id, 20, 20, 1.0F).setTextureName("firstmod:burger");
+    public static Item Chips = ((ItemFood)(new ItemFood(5009, 2, 0.1F, false)).setUnlocalizedName("chips")).setPotionEffect(Potion.hunger.id, 20, 20, 1.0F).setTextureName("firstmod:chips");
+    public static Item pizzaSlice = ((ItemFood)(new ItemFood(5010, 2, 0.1F, false)).setUnlocalizedName("pizza_slice")).setPotionEffect(Potion.resistance.id, 20, 20, 1.0F).setTextureName("firstmod:pizza_slice");
+    public static Item rawChocolate = ((ItemFood)(new ItemFood(5011, 2, 0.1F, false)).setUnlocalizedName("raw_chocolate")).setTextureName("firstmod:raw_chocolate");
+    public static Item Chocolate = ((ItemFood)(new ItemFood(5012, 2, 0.1F, false)).setUnlocalizedName("chocolate")).setTextureName("firstmod:chocolate");
+    public static Item tomato = (new ItemSeedFood(5013, 1, 0.3F, Block.tomato.blockID, Block.tilledField.blockID)).setUnlocalizedName("tomato").setTextureName("firstmod:tomato");
     
     /**
      * Item introduced on 1.7 version, is a shear to cut leaves (you can keep the block) or get wool from sheeps.
