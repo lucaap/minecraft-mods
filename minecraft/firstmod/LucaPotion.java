@@ -16,16 +16,16 @@ import net.minecraft.world.World;
 
 public class LucaPotion extends ItemFood
 {
-	private int[] potionEffect = {14, 4};
-	private int[] potionDuration = {60, 30};
-	private int[] potionTier = {3, 2};
+	private int[] potionEffect = {22,};
+	private int[] potionDuration = {120,};
+	private int[] potionTier = {3,};
 	
     public LucaPotion(int itemID)
 	{
     	super(itemID, 0, 0F, false);
 	    this.maxStackSize = 1;
 	    this.setAlwaysEdible();
-	    this.setCreativeTab(CreativeTabs.tabBrewing);	        
+	    this.setCreativeTab(CreativeTabs.tabBrewing);     
 	    setTextureName("firstmod:lucaPotion");
 	}
     
@@ -40,8 +40,7 @@ public class LucaPotion extends ItemFood
     protected void addPotionEffects(ItemStack item, World world, EntityPlayer player)
     {
         player.addPotionEffect(new PotionEffect(potionEffect[0], potionDuration[0] * 20, potionTier[0]));       
-        player.addPotionEffect(new PotionEffect(potionEffect[1], potionDuration[1] * 20, potionTier[1])); 
-    }
+     }
     
     public EnumAction getItemUseAction(ItemStack itemstack)
     {
@@ -61,6 +60,6 @@ public class LucaPotion extends ItemFood
     
     public void addInformation(ItemStack item, EntityPlayer player, List list, boolean par4)
     {
-    	list.add("Invisibility III 1:00");    	
+    	list.add("Absorption IV (2:00)");    	
     }	
 }
