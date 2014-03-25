@@ -241,7 +241,6 @@ public class Item
     public static Item recordWard = (new ItemRecord(2009, "ward")).setUnlocalizedName("record").setTextureName("record_ward");
     public static Item record11 = (new ItemRecord(2010, "11")).setUnlocalizedName("record").setTextureName("record_11");
     public static Item recordWait = (new ItemRecord(2011, "wait")).setUnlocalizedName("record").setTextureName("record_wait");
-
     /** The ID of this item. */
     public final int itemID;
 
