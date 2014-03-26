@@ -26,7 +26,7 @@ public class LucaPotion extends ItemFood
 	    this.maxStackSize = 1;
 	    this.setAlwaysEdible();
 	    this.setCreativeTab(CreativeTabs.tabBrewing);     
-	    setTextureName("firstmod:lucaPotion");
+	    setTextureName("firstmod:absorption_potion");
 	}
     
 	public void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player)

@@ -13,7 +13,8 @@ public class FirstMod
    @SidedProxy(clientSide = "firstmod.ClientProxy", serverSide = "firstmod.CommonProxy")
    public static CommonProxy proxy;
    
-   public static final Item itemPotion = new LucaPotion(1000).setUnlocalizedName("lucaPotion");
+   public static final Item absorptionPotion = new LucaPotion(1000).setUnlocalizedName("absorptionPotion");
+   public static final Item resistancePotion = new ResistancePotion(1001).setUnlocalizedName("resistancePotion");
    
    @Init
    public void load(FMLInitializationEvent event)
