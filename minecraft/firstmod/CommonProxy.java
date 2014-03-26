@@ -1,15 +1,13 @@
 package firstmod;
 
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
 public class CommonProxy {
 
 	public void addNames() {
-		// TODO Auto-generated method stub
-		
+		LanguageRegistry.addName(FirstMod.absorptionPotion, "Potion of Absorption");
 	}
 
 	public void addRecipes() {
-		// TODO Auto-generated method stub
-		
 	}
-
 }

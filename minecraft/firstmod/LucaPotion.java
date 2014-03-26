@@ -16,10 +16,6 @@ import net.minecraft.world.World;
 
 public class LucaPotion extends ItemFood
 {
-	private int[] potionEffect = {22,};
-	private int[] potionDuration = {120,};
-	private int[] potionTier = {3,};
-	
     public LucaPotion(int itemID)
 	{
     	super(itemID, 0, 0F, false);
@@ -29,6 +25,7 @@ public class LucaPotion extends ItemFood
 	    setTextureName("firstmod:absorption_potion");
 	}
     
+    @Override
 	public void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player)
     {	
         --itemstack.stackSize;
@@ -39,25 +36,29 @@ public class LucaPotion extends ItemFood
     
     protected void addPotionEffects(ItemStack item, World world, EntityPlayer player)
     {
-        player.addPotionEffect(new PotionEffect(potionEffect[0], potionDuration[0] * 20, potionTier[0]));       
-     }
+        player.addPotionEffect(new PotionEffect(22, 120 * 20, 3));       
+    }
     
+    @Override
     public EnumAction getItemUseAction(ItemStack itemstack)
     {
         return EnumAction.drink;       
     }
     
+    @Override
     public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
     {     	
     	player.setItemInUse(itemstack, this.getMaxItemUseDuration(itemstack));	       	
         return itemstack; 
     }
     
+    @Override
     public boolean hasEffect(ItemStack itemstack)
     {	
         return true;        
     }
     
+    @Override
     public void addInformation(ItemStack item, EntityPlayer player, List list, boolean par4)
     {
     	list.add("Absorption IV (2:00)");    	
