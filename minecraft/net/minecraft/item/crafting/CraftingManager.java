@@ -148,14 +148,6 @@ public class CraftingManager
         this.addShapelessRecipe(new ItemStack(Item.fireballCharge, 3), new Object[] {Item.gunpowder, Item.blazePowder, new ItemStack(Item.coal, 1, 1)});
         this.addRecipe(new ItemStack(Block.daylightSensor), new Object[] {"GGG", "QQQ", "WWW", 'G', Block.glass, 'Q', Item.netherQuartz, 'W', Block.woodSingleSlab});
         this.addRecipe(new ItemStack(Block.hopperBlock), new Object[] {"I I", "ICI", " I ", 'I', Item.ingotIron, 'C', Block.chest});
- 
-        this.addRecipe(new ItemStack(Item.energyBar), new Object[] {"SWS", 'W', Item.sugar, 'S', Item.Chocolate});
-        this.addRecipe(new ItemStack(Item.orangeFanta), new Object[] {"SWS", 'S', Item.sugar, 'W', Item.glassBottle});
-        this.addRecipe(new ItemStack(Item.strawberryFanta), new Object[] {"SWS", 'S', Item.appleRed, 'W', Item.glassBottle});
-        this.addRecipe(new ItemStack(Item.blueberryFanta),new Object[] {"SWS", 'S', ItemFood.melon, 'W', Item.glassBottle});
-        this.addRecipe(new ItemStack(Item.lemonFanta), new Object[] {"SWS", 'S', ItemFood.bucketMilk, 'W', Item.glassBottle});
-        this.addRecipe(new ItemStack(Item.mixFanta), new Object[] {"SWS", 'S', Item.appleGold, 'W', Item.glassBottle});
-        this.addRecipe(new ItemStack(Item.rawChocolate), new Object[] {"SW", 'S', new ItemStack(Item.dyePowder, 1, 3), 'W', Item.sugar});
         Collections.sort(this.recipes, new RecipeSorter(this));
     }
 
